@@ -10,7 +10,7 @@
     <title><?=$title?></title>
 </head>
 <body>
-<div class="global">
+<div class="altGlobal">
   
 
 <?php
@@ -49,7 +49,7 @@ if (isset($_GET["p"]) && $_GET["p"] == "program") {
     }
     endforeach;
 } ?></div> <?php
-    require_once ("inc/newsPartnerView.php");
+    require_once ("inc/altNewsPartnerView.php");
     require_once ("inc/footerView.php");
 ?>
 

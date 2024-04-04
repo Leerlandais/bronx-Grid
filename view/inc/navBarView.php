@@ -9,7 +9,7 @@
             <img src="../public/images/photosHome/02.jpg" alt="navImg2" class="navImg">
            </div>
            <div class="linkWindow">
-            <a href="?p=school" class="linkSpan"><span><?=$linkScho?></span></a>
+            <a href="?p=school&schoolpage=1" class="linkSpan"><span><?=$linkScho?></span></a>
             <img src="../public/images/photosHome/03.jpg" alt="navImg3" class="navImg">
            </div>
            <div class="linkWindow">

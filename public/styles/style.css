@@ -5,7 +5,7 @@ body {
 .global {
     font-family: inter;
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 90%;
     grid-template-rows: 150px auto 200px 100px auto;
     grid-template-areas: 
     "headGrid"
@@ -14,6 +14,22 @@ body {
     "partnerGrid"
     "footGrid";
     justify-content: center;
+}
+
+.altGlobal {
+    font-family: inter;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 150px auto auto auto 180px auto;
+    grid-template-areas: 
+    "headGrid"
+    "altNavGrid"
+    "progGrid"
+    "altNewsGrid"
+    "altPartnerGrid"
+    "footGrid";
+    justify-content: center;
+    text-align: center;
 }
 
 .header {
@@ -60,7 +76,22 @@ body {
 }
 
 .altNavBar {
+    margin: 2vh auto 0;   
+    width: 100%;
     grid-area: altNavGrid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.smLinkWindow {
+        margin: 3px auto;
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        width: 200px;
+        border: 1px solid;
+        border-radius: 10px;
 }
 
 .news {
@@ -79,10 +110,10 @@ body {
     text-decoration: none;
 }
 
-.news h4 {
+.news h4, .altNews h4 {
     margin-bottom: 15px;
 }
-.news span {
+.news span, .altNews span {
     background-color: black;
     color: white;
     padding: 6px;
@@ -92,6 +123,13 @@ body {
 
 .altNews {
     grid-area: altNewsGrid;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    width: 100%;
 }
 
 .partners {
@@ -101,9 +139,16 @@ body {
     justify-content: center;
 }
 
-.partners img {
+.altPartners {
+    grid-area: altPartnerGrid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partners img, .altPartners img {
     margin: 1vh 2vw;
-    width: 12vw;
+    width: 18vw;
     height: 4vh;
 }
 
@@ -160,9 +205,20 @@ body {
     padding: 5px;
 }
 
-.linkSpan:hover {
+.altLinkSpan {
+    font-family: Impact;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 200px;
+}
+
+.linkSpan:hover, .altLinkSpan:hover {
     background-color: yellow;
 }
+
+
 
 .navImg {
     width: 250px;
@@ -175,24 +231,77 @@ body {
     justify-content: space-evenly;
 }
 
+.progHolder {
+    grid-area: progGrid;
+    padding-top: 2vh;    
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.limitOnSmall {
+    width: 80%;
+}
+
+
+
+.schoolBody a {
+    text-decoration: none;
+}
+
+
+
 @media screen and (min-width: 800px) {
 
-
+    .partners img {
+        margin: 1vh 2vw;
+        width: 9vw;
+        height: 5vh;
+    }
 
 }
 
 @media screen and (min-width: 1200px) {
-    .global {
-        grid-template-rows: 300px auto 200px 100px auto;
+    .altGlobal {
+        grid-template-rows: 300px auto auto 250px 200px auto;
     }
 
+    .global {
+        grid-template-rows: 300px auto 250px 200px auto;
+    }
     #searchField {
         width: calc(100vw/4);
     }
     .partners img {
         margin: 1vh 2vw;
-        width: 8vw;
+        width: 7vw;
         height: 5vh;
     }
+    
+    .altNavBar {
+        flex-direction: row;
+    }
+    .altPartners img {
+        margin: 1vh 2vw;
+        width: 9vw;
+        height: 6vh;
+    }
+    .schoolBody {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: justify;
+        margin-top: 5vh;
+    }
 
+    .innerSchool {
+        width: 40%;
+        margin-left: 3vw;
+    }
+
+    .limitOnSmall {
+        width: 60%;
+    }
 }

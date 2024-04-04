@@ -1,4 +1,4 @@
-const linkSpan = document.querySelectorAll(".linkSpan");
+const linkSpan = document.querySelectorAll(".altLinkSpan");
 const URL_SearchParams = new URLSearchParams(window.location.search);
 searchParams = URL_SearchParams.get("p");
 
