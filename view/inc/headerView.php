@@ -11,5 +11,5 @@
                 <a href="?lang=en"><button class="langButton" id="langButEN"></button></a>
             </div>
         </div>
-        <h6 id="screenwidth" style="display: none;"></h6>
-    </div><!-- end header --> 
+        <h6 id="screenwidth" style=""></h6>
+    </div><!-- end header -->  

@@ -5,22 +5,41 @@ body {
 .global {
     font-family: inter;
     display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 100px auto 100px 100px 100px;
+    grid-template-columns: 80%;
+    grid-template-rows: 200px auto 100px 100px 100px;
     grid-template-areas: 
     "headGrid"
     "altNavGrid"
     "altNewsGrid"
     "partnerGrid"
     "footGrid";
-    align-items: center;
+    justify-content: center;
 }
 
 
 .header {
     grid-area: headGrid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+.headLogo {
+    width: 100%;
+    height: 100%;
+    margin-top: 1vh;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+.searchGlass {
+    width: 20px;
+    height: 20px;
+}
 .navBar {
     grid-area: navGrid;
 }
@@ -53,19 +72,32 @@ body {
 
 #langButEN {
     background-image: url("../images/gb.svg");
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #langButFR {
     background-image: url("../images/fr.svg");
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #langButBE {
     background-image: url("../images/be.svg");
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .global {
+        grid-template-rows: 300px auto 100px 100px 100px;
+    }
 }

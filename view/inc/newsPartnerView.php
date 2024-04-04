@@ -8,4 +8,4 @@
         <img src="../public/images/photosLogo/vlaanderen-logo.jpg" alt="logo Vlaanders">
         <img src="../public/images/photosLogo/logo_vbx.png" alt="logo VBX">
         <img src="../public/images/photosLogo/bruzz_logo.png" alt="logo Bruzz">
-    </div><!-- end partners -->
+    </div><!-- end partners --> 

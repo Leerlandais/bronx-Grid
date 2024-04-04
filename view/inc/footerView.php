@@ -4,4 +4,4 @@
         <p>info@bronks.be</p>
         <p>Horaires d'ouverture de la réception : Mercredi de 13H00 à 17H30</p>
         <p>&copy; Design By Lee - 2024</p>
-    </div><!-- end footer -->
+    </div><!-- end footer --> 
