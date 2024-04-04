@@ -6,11 +6,11 @@ body {
     font-family: inter;
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 150px auto 100px 100px 100px;
+    grid-template-rows: 150px auto 200px 100px auto;
     grid-template-areas: 
     "headGrid"
     "navGrid"
-    "altNewsGrid"
+    "newsGrid"
     "partnerGrid"
     "footGrid";
     justify-content: center;
@@ -65,7 +65,29 @@ body {
 
 .news {
     grid-area: newsGrid;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    width: 100%;
+}
 
+.news * {
+    margin: 0;
+    text-decoration: none;
+}
+
+.news h4 {
+    margin-bottom: 15px;
+}
+.news span {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    
+    
 }
 
 .altNews {
@@ -74,11 +96,24 @@ body {
 
 .partners {
     grid-area: partnerGrid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partners img {
+    margin: 1vh 2vw;
+    width: 12vw;
+    height: 4vh;
 }
 
 .footer {
     grid-area: footGrid;
-
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 }
 
 #langButEN {
@@ -148,12 +183,16 @@ body {
 
 @media screen and (min-width: 1200px) {
     .global {
-        grid-template-rows: 300px auto 100px 100px 100px;
+        grid-template-rows: 300px auto 200px 100px auto;
     }
 
     #searchField {
         width: calc(100vw/4);
     }
-
+    .partners img {
+        margin: 1vh 2vw;
+        width: 8vw;
+        height: 5vh;
+    }
 
 }
