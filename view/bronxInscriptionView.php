@@ -10,11 +10,11 @@
     <title><?=$title?></title>
 </head>
 <body>
-<div class="global">
+<div class="inscGlobal">
 
 <?php
     require_once ("inc/headerView.php");
- //   require_once ("inc/altNavBarView.php");
+    require_once ("inc/altNavBarView.php");
     ?>
     <div class="formHolder">
     <h2>INSCRIPTION</h2>
