@@ -6,16 +6,15 @@ body {
     font-family: inter;
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 200px auto 100px 100px 100px;
+    grid-template-rows: 150px auto 100px 100px 100px;
     grid-template-areas: 
     "headGrid"
-    "altNavGrid"
+    "navGrid"
     "altNewsGrid"
     "partnerGrid"
     "footGrid";
     justify-content: center;
 }
-
 
 .header {
     grid-area: headGrid;
@@ -31,17 +30,33 @@ body {
     margin-top: 1vh;
 }
 
+.searchForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchField {
+    width: calc(100vw/3);
+    height: 60%;
+    margin-top: 3px;
+}
 .searchBar {
     display: flex;
     flex-direction: column;
     align-items:end;
+
 }
 .searchGlass {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.langBar {
+    margin-right: 40px;
 }
 .navBar {
     grid-area: navGrid;
+    margin-top: 2vh;
 }
 
 .altNavBar {
@@ -64,10 +79,6 @@ body {
 .footer {
     grid-area: footGrid;
 
-}
-
-.linkSpan:hover {
-    background-color: yellow;
 }
 
 #langButEN {
@@ -95,9 +106,54 @@ body {
     background-size: cover;
 }
 
+.linkWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkSpan {
+    font-family: Impact;
+    font-weight: 100;
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 1vh auto 0.5vh;
+    color: black;
+    padding: 5px;
+}
+
+.linkSpan:hover {
+    background-color: yellow;
+}
+
+.navImg {
+    width: 250px;
+    height: 150px;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 800px) {
+
+
+
+}
 
 @media screen and (min-width: 1200px) {
     .global {
         grid-template-rows: 300px auto 100px 100px 100px;
     }
+
+    #searchField {
+        width: calc(100vw/4);
+    }
+
+
 }

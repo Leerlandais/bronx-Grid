@@ -14,7 +14,7 @@
   
 <?php
     require_once ("inc/headerView.php");
- //   require_once ("inc/navBarView.php");
+    require_once ("inc/navBarView.php");
  //   require_once ("inc/newsPartnerView.php");
  //   require_once ("inc/footerView.php");
 ?>
